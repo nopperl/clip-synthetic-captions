@@ -1,0 +1,16 @@
+models:
+  - dedup-isc-ft-v107
+postprocess_columns:
+  - dedup-isc-ft-v107-score
+additional_fields:
+  - uid
+  - text
+  - url
+  - original_image_filename
+nworkers: 2
+batch_size: 512
+device: 0
+input_tars: "data/processed/ye-pop-img2dataset-llava_caption/{000..010}.tar"
+output_metadata_dir: "data/postprocessed/ye-pop-img2dataset-llava_caption/metadata"
+custom_pypath: null
+reprocess: True

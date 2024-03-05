@@ -1,0 +1,19 @@
+diff --git a/scale_configs.py b/scale_configs.py
+index fb2ea7a..3f94e72 100644
+--- a/scale_configs.py
++++ b/scale_configs.py
+@@ -7,6 +7,14 @@ SCALE_CONFIGS = {
+         "model": "ViT-B-32",
+         "beta2": None,
+     },
++    "tiny": {
++        "batch_size": 4096,
++        "learning_rate": 5e-4,
++        "train_num_samples": 491_520,
++        "warmup": 500,
++        "model": "ViT-B-32",
++        "beta2": None,
++    },
+     "small": {
+         "batch_size": 4096,
+         "learning_rate": 5e-4,
