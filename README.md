@@ -29,12 +29,13 @@ Epochs | Average score
 26 | 0.098
 104 | 0.094
 
-[DALL-E-3](https://openai.com/dall-e-3) suggests to use both detailed synthetic captions and alt-texts according to a 95%:5% split. For the datasets used in this experiment, this did not affect the model performance:
+[DALL-E-3](https://openai.com/dall-e-3) suggests to use both detailed synthetic captions and alt-texts according to a 95%:5% split. [Stable Diffusion 3](https://stability.ai/news/stable-diffusion-3-research-paper) uses a 50%:50% split. For the datasets used in this experiment, this did not significantly affect the model performance:
 
 Captions | Average score
 --- | ---
 CogVLM | 0.095
 95% CogVLM + 5% alt-text | 0.095
+50% CogVLM + 50% alt-text | 0.096
 
 Training a CLIP model on CogVLM-generated captions with different CLIP architectures only marginally changes results:
 
